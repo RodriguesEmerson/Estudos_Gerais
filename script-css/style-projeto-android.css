@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'android';
+    src: url('../imagens/projeto-android/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --azul: rgb(5, 164, 226);
+    --azul-half: rgb(13, 76, 158);
+    --azul-escuro: rgb(24, 30, 32);
+    --cinza:rgb(73, 71, 71);
+}
+#content-right{
+    width: calc(100% - 50px);
+    position: relative;
+   
+}
+
+#conteudo{
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+   
+}
+.pa-cabecalho{
+    position: relative;
+    background-image: linear-gradient( to right,var(--azul-half), var(--azul)) ;
+    color: white;
+    
+}
+.pa-cabecalho h1{
+    font-family: 'android';
+    padding-top: 1em;
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+.pa-cabecalho p{
+    padding: 0 0 10px 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.pa-cabecalho ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+/*pa-body*/
+.pa-body{
+    max-width: 800px;
+    padding:  10px;
+    margin: -10px auto 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.247);
+}
+.pa-body h2{
+    font-family: 'android';
+    color: var(--azul-half);
+    font-size: 1.2em;
+}
+.pa-body img{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.img-half{
+    max-width: 40% !important;
+}
+.pa-body p{
+    text-indent: 30px;
+}
+
+/*video*/
+.video{
+    margin: 0 -10px;
+    background-color: var(--azul-half);
+    position: relative;
+    padding-bottom: 55%;
+}
+.video iframe{
+    position: absolute;
+    top: 3%;
+    left: 1.5%;
+    width: 97%;
+    height: 94%;
+}
+
+.info{
+    background-color: rgba(0, 127, 245, 0.158);
+    padding: 0 10px 10px 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.info h3{
+    background-color: var(--azul-half);
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin: 0 -10px;
+    color: white;
+}
+.info ul{
+    column-count: 2;    
+    list-style-type: none;
+}
+.info li::before{
+    content: '✓ ';
+    font-weight: bold;
+}
