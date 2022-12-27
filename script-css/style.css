@@ -25,7 +25,7 @@ header{
 }
 #content-right{
     margin-left: 200px;
-    
+    width: calc(100% - 180px)
 } 
 #logo,#dados-show,#dados-show2:hover{
     cursor: pointer;
@@ -171,7 +171,6 @@ header{
 }
 .link-nav{
     padding: 10px 0 0 20px;
-    
 }
 .img-icon{
     width: 15px;
@@ -181,9 +180,11 @@ header{
     opacity: 0.6;
     color: white;
     text-decoration: none;
+    cursor: pointer; 
 }
 .link-nav a:hover{
     opacity: 1;
+    
 }
 .link-nav a:nth-last-child(1){
     transition: all 300ms ease-in-out;
@@ -303,6 +304,7 @@ opacity: 0.95;
     }
    #content-right{
        margin-left: 50px;
+       width: calc(100vw - 50px);
    }  
     .show-nav{
         display: block;

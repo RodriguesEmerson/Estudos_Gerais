@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../script-css/style.css">
+    <link rel="stylesheet" href="../script-css/style-tabelas.css">
+    <title> EE | Estudos Emerson</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img  id="logo" src="../imagens/logo.png" alt="logo">
+        </div>
+        <div id="menu">
+            <nav class="nav-header">
+                    <div>
+                        <span class="abbr1">Exemple</span>
+                    </div>
+                <ul>
+                    <li id="icon-1"><a href="#"><img class="icon-menu" src="../imagens/gift-card.png" alt="gift-card"></a></li>
+                    <li id="icon-2"><a href="#"><img class="icon-menu" src="../imagens/sino.png" alt="sininho"></a></li>
+                    <li id="icon-3"><a href="#"><img class="icon-menu" src="../imagens/help.png" alt="help"></a></li>
+                </ul>
+            </nav>
+            <div class="user">
+                <div onclick="abrir()" id="dados-show"><img class="icon-menu-down" src="../imagens/down-arrow.png" alt="down-arrow"></div>
+                <div onclick="abrir()" id="dados-show2" ><img class="icon-menu" src="../imagens/user-image.png" alt="user"></div>
+            </div>
+        </div>
+    </header>
+    <main id="container">
+        <div class="dados-user" id="dados-user">
+            <div class="data-user-header">
+                <img src="../imagens/user-image.png" alt="">
+                <div>
+                    <div id="nome-perfil">Olá,user</div>
+                    <div id="email-perfil">usuarioexemplo@gmail.com</div>
+                </div>
+
+            </div>
+            <div class="data-uder-body">
+                <a href="#">Minha conta</a>
+                <a href="#">Sair</a>
+            </div>
+        </div>
+        <aside class="aside-nav">
+            <div class="link-nav show-nav" onclick="show_nav()"> <img class="img-icon" id="img-menu" src="../imagens/seta-right.png" alt=""></div>
+            <div class="menu">
+                <div class="link-nav"> <a href="index.html" rel="prev" target="_self"><img class="img-icon" src="../imagens/home.png" alt=""> <span>Início</span></a></div>
+                <div class="link-nav"> <a href="#"><img class="img-icon" src="../imagens/book.png" alt=""> <span>Projetos</span></a></div>
+                <div class="link-nav"> <a href="#"><img class="img-icon" src="../imagens/violao.png" alt=""><span>Cifras</span></a></div>
+                <div class="link-nav"> <a href="#"><img class="img-icon" src="../imagens/mail.png" alt=""><span>Contato</span></a></div>
+            </div>
+            
+        </aside>
+        <section id="content-right">       
+            <div id="page"><span>TABELAS</span></div>
+                <section class="conteudo">
+                    <div class="t-header">
+                        <h1>Tabelas | Modelos e Scope</h1>
+                    </div>
+                    <div class="t-body">
+                        <div class="tabela-simples">
+                            <h2>Tabela Simples</h2>
+                            <table>
+                                <tr>
+                                    <td>100</td>
+                                    <td>200</td>
+                                    <td>300</td>
+                                    <td>400</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>600</td>
+                                    <td>700</td>
+                                    <td>800</td>
+                                    <td>900</td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <td>1100</td>
+                                    <td>1200</td>
+                                    <td>1300</td>
+                                    <td>1400</td>
+                                    <td>1500</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="tabela-simples">
+                            <h2>Tabela Simples | #2</h2>
+                            <table>
+                                <tr>
+                                    <th scope="row">Client One</th>
+                                    <td>Jhon</td>
+                                    <td>34</td>
+                                    <td>Developer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Client Two</th>
+                                    <td>Mary</td>
+                                    <td>30</td>
+                                    <td>Designer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Client Tree</th>
+                                    <td>Michael</td>
+                                    <td>33</td>
+                                    <td>Developer</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="tabela-completa">
+                            <h2>Tabela <q>Completa</q></h2>
+                            <table>
+                                <thead>
+                                    <th colspan="4" scope="colgroup" class="brasil">Brasil 2022</th>
+                                    <tr>
+                                        <th scope="col">Posição</th>
+                                        <th scope="col">UF</th>
+                                        <th scope="col">População</th>
+                                        <th scope="col">% da pop. total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>São Paulo</td>
+                                        <td>46 649 132</td>
+                                        <td>21,9%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Minas Gerais</td>
+                                        <td>19 597 330</td>
+                                        <td>10,1%	</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Rio de Janeiro</td>
+                                        <td>15 989 929</td>
+                                        <td>8,2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Bahia</td>
+                                        <td>14 016 906</td>
+                                        <td>7,1%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Paraná</td>
+                                        <td>10 444 526</td>
+                                        <td>5,4%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Rio Grande do Sul</td>
+                                        <td>10 693 929</td>
+                                        <td>5,4%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Pernambuco</td>
+                                        <td>8 796 448</td>
+                                        <td>4,5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Ceará</td>
+                                        <td>8 452 381</td>
+                                        <td>4,3%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Pará</td>
+                                        <td>7 581 051</td>
+                                        <td>4,1%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Santa Catarina</td>
+                                        <td>6 248 436	</td>
+                                        <td>3,4%</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th scope="row" colspan="2">Total</th>
+                                        <td>148 470 068</td>
+                                        <td>74,4%</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+        </section>
+    </main>
+
+
+    
+    <footer>
+
+    </footer>
+    <script src="../script-css/script.js"></script>
+</body>
+</html>

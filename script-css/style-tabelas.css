@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Roboto:wght@100;900&family=Satisfy&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,400;1,600;1,700;1,900&display=swap');
+:root{
+    --LaranjaEscuro: #A3621C;
+    --LaranjaClaro: #e46c09;
+    --RoxoDarck:rgb(94, 2, 148);
+    --Roxo:#6A29F0;
+    --Roxo-escuro: #3803A3;
+    --cinza:rgb(167, 165, 165);
+}
+.t-header{
+    background: var(--LaranjaClaro);
+    color: white;
+    height: 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.t-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.tabela-simples{
+    width: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(163, 98, 28, 0.24);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid var(--cinza);
+}
+.tabela-simples h2{
+    margin: 0 0 10px 0;
+    color: var(--LaranjaClaro);
+}
+.tabela-simples table{
+    border-collapse: collapse;
+}
+.tabela-simples table td{
+    border: 1px solid var(--cinza);
+    padding: 0 10px;
+}
+
+
+
+
+
+.tabela-completa{
+    width: 500px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(163, 98, 28, 0.24);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid var(--cinza);
+}
+.tabela-completa table{
+    width: 90%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.tabela-completa table thead th{
+    background-color: var(--LaranjaEscuro);
+    color: white;
+    padding: 5px 0;
+}
+.tabela-completa tfoot tr:nth-child(1){
+    text-align: center;
+    font-weight: bold;
+}
+.tabela-completa tbody tr:nth-child(odd){
+    background-color: white;
+}
+.tabela-completa tfoot tr{
+    background-color: var(--LaranjaEscuro)
+}
+.brasil{
+    background-color: rgb(0, 97, 84) !important;
+}
+
+@media screen and (max-width: 610px){
+    .tabela-completa{
+        width: auto;
+        overflow-x: scroll;
+    }
+}
