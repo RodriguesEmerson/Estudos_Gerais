@@ -258,16 +258,7 @@ header{
 margin-top: -2px;
 opacity: 0.95;
 }
-.box-projetos:nth-child(1){
-    transition: all 200ms ease-in-out;
-}
-.box-projetos:nth-child(2){
-    transition: all 200ms ease-in-out;
-}
-.box-projetos:nth-child(3){
-    transition: all 200ms ease-in-out;
-}
-.box-projetos:nth-child(4){
+.box-projetos:nth-child(n){
     transition: all 200ms ease-in-out;
 }
 .text-projetos{
