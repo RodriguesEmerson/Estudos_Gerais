@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../script-css/style-old.css">
+    <title> EE | Estudos Emerson</title>
+</head>
+<body>
+    <header>
+        <div> 
+            <img  id="logo" src="../imagens/logo.png" alt="logo">
+        </div>
+        <div id="menu">
+            <nav class="nav-header">
+                <div>
+                    <span class="abbr1">Exemple</span>
+                </div>
+                <ul>
+                    <li id="icon-1"><a href="#"><img class="icon-menu" src="../imagens/gift-card.png" alt="gift-card"></a></li>
+                    <li id="icon-2"><a href="#"><img class="icon-menu" src="../imagens/sino.png" alt="sininho"></a></li>
+                    <li id="icon-3"><a href="#"><img class="icon-menu" src="../imagens/help.png" alt="help"></a></li>
+                </ul>
+            </nav>
+            <div class="user">
+                <div onclick="abrir()" id="dados-show"><img class="icon-menu-down" src="../imagens/down-arrow.png" alt="down-arrow"></div>
+                <div onclick="abrir()" id="dados-show2" ><img class="icon-menu" src="../imagens/user-image.png" alt="user"></div>
+            </div>
+        </div>
+    </header>
+    <main id="container">
+    <div class="dados-user" id="dados-user">
+            <div class="data-user-header">
+                <img src="../imagens/user-image.png" alt="">
+                <div>
+                    <div id="nome-perfil">Olá,user</div>
+                    <div id="email-perfil">usuarioexemplo@gmail.com</div>
+                </div>
+
+            </div>
+            <div class="data-uder-body">
+                <a href="#">Minha conta</a>
+                <a href="#">Sair</a>
+            </div>
+        </div>
+        <aside class="aside-nav">
+            <div class="link-nav show-nav" onclick="show_nav()"> <img class="img-icon" id="img-menu" src="../imagens/seta-right.png" alt=""></div>
+            <div class="menu">
+                <div class="link-nav"> <a href="#"><img class="img-icon" src="../imagens/home.png" alt=""> <span>Início</span></a></div>
+                <div class="link-nav"> <a href="#"><img class="img-icon" src="../imagens/book.png" alt=""> <span>Projetos</span></a></div>
+                <!--<div class="link-nav"> <a href="#"><img class="img-icon" src="../imagens/violao.png" alt=""><span>Cifras</span></a></div>-->
+                <div class="link-nav"> <a href="#"><img class="img-icon" src="../imagens/mail.png" alt=""><span>Contato</span></a></div>
+            </div>
+            
+        </aside>
+        <section id="content-right">
+                <div id="page"><span>INÍCIO</span></div>
+            <section>
+                <div class="back">
+                    <div id="textos-destaque">
+                        <h1>Aplicação de Aprendizados</h1>
+                        <p>Estudando e aplicando aqui meus conhecimentos.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="projetos">
+                <div class="box-projetos" id="projeto-cordel">
+                    <a class="link-box" href="projeto-cordel.html" rel="next" target="_self">
+                        <div class="img-projetos">
+                            <img src="../imagens/cordel.png" alt="projeto-cordel-img">
+                        </div>
+                        <div class="text-projetos">
+                            <h3>Projeto Cordel</h3>
+                            <p>Projeto do Curso em Vídeo, do professor <strong>Gustavo Guanabara</strong>. Este é uma segunda versão para aplicar conhecimentos.</p>
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="box-projetos" id="projeto-android">
+                    <a class="link-box" href="projeto-android.html" rel="next" target="_self">
+                        <div class="img-projetos">
+                            <img src="../imagens/android.png" alt="projeto-cordel-img">
+                        </div>
+                        <div class="text-projetos">
+                            <h3>Projeto android</h3>
+                            <p>Mais um projeto do curso. Esta é uma segunda versão para aplicar conhecimentos.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box-projetos" id="projeto-tabelas">
+                    <a class="link-box" href="tabelas.html">
+                        <div class="img-projetos">
+                            <img src="../imagens/tabelas.png" alt="projeto-receitas-img">
+                        </div>
+                        <div class="text-projetos">
+                            <h3>Estudos de Tabelas</h3>
+                            <p>Estudo do final do módulo 3 do <strong>Curso em Vídeo.</strong></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box-projetos" id="projeto-receitas">
+                    <a class="link-box" href="https://rodriguesemerson.github.io/projeto-receitas/" rel="external" target="_blank">
+                        <div class="img-projetos">
+                            <img src="../imagens/receitas-img.png" alt="projeto-receitas-img">
+                        </div>
+                        <div class="text-projetos">
+                            <h3>Projeto Receitas</h3>
+                            <p>Projeto próprio, esta também é uma segunda versão para aplicar conhecimentos.</p>
+                        </div>
+                    </a> 
+                </div>
+                <div class="box-projetos" id="projeto-sitefotos">
+                    <a class="link-box" href="https://rodriguesemerson.github.io/Photography-Site/paginas" rel="external" target="_blank">
+                        <div class="img-projetos">
+                            <img src="../imagens/p-foto.png" alt="projeto-receitas-img">
+                        </div>
+                        <div class="text-projetos">
+                            <h3>Site de Fotos</h3>
+                            <p>Criei este projeto para aprender modal e css grid.</p>
+                        </div>
+                    </a> 
+                </div>
+                <div class="box-projetos" id="projeto">
+                    <a class="link-box" href="#">
+                        <div class="img-projetos">
+                            <img src="../imagens/breve.png" alt="projeto-receitas-img">
+                        </div>
+                        <div class="text-projetos">
+                            <h3>Em breve...</h3>
+                            <p>...</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../script-css/script.js"></script>
+</body>
+</html>
