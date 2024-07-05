@@ -37,47 +37,68 @@ main{
     width: 300px;
 }
 
+/*SLIDER*/
 .slider{
     width: 400px;
     height: 200px;
     margin-top: 10px;
-    border-radius: 10px;  
-    display: flex;
-    justify-content: center;
-    align-items: row;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.342) 2px 3px 5px 1px;
+    border-radius: 10px;
+}
+.img-cont{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transition: 1s;
 }
 .slider img{
-    width:  400px  !important;
+    width: 400px !important;
 }
-#radio-container{
+.slider input{
+    display: none;
+}
+
+.label-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 400px;
     height: 10px;
     position: absolute;
     bottom: -140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.btn-radio{
-    background-color: bisque;
-    display: none;
-}
-.label-container{
-    width: 100%;
-    height: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .label-radio{
     height: 8px;
     width: 8px;
-    margin: 0px 5px;
-    border-radius: 100%;
+    border: 2px solid white;
+    border-radius: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.label-radio:not(:last-child){
+    margin-right: 8px;
+}
+.label-radio:hover{
     background-color: white;
 }
 
-/*rolagem do slider*/
+#first:checked ~ .label-cont .label-radio-1{
+    background-color: white;
+}
+#second:checked ~ .label-cont .label-radio-2{
+    background-color: white;
+}
+#terceiro:checked ~ .label-cont .label-radio-3{
+    background-color: white;
+}
 
+#first:checked ~ .img-cont{
+    margin-left: 0px;
+}
+#second:checked ~ .img-cont{
+    margin-left: -400px;
+}
+#terceiro:checked ~ .img-cont{
+    margin-left: -800px;
+}
